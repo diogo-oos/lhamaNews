@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p, form{
+    margin: 10px;
+}
+
+#tela{
+    margin: 10px;
+}
+
+img{
+    float: left;
+    margin-right: 10px;
+    width: 120px;
+}
+
+.titulo{
+    font-weight: 700;
+}
+
+.creditos{
+    color: red;
+}
+
+.boxNoticias{
+    color: dimgray;
+    margin-bottom: 10px;
+    clear: both;
+}
