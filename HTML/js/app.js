@@ -19,7 +19,7 @@ function exibirNoticias() {
         <span class="titulo">${noticia.title}</span><br>
         <span class="creditos">${data.toLocaleDateString()} - ${noticia.source.name} - ${noticia.author}</span><br>
         <span class="text">${noticia.content}
-        <a href="${noticia.url}">Leia mais ...</a>
+        <a href="${noticia.url}" target="_blank">Leia mais ...</a>
         </span>
         <p>===============================</p>
         </div>
