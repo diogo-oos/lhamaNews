@@ -14,7 +14,7 @@ function exibirNoticias() {
         let data = new Date(noticia.publishedAt);
 
         texto += `
-        <div class="boxNoticias">
+        <article class="boxNoticias">
         <img src="${noticia.urlToImage}" alt="Imagem da notícia">
         <span class="titulo">${noticia.title}</span><br>
         <span class="creditos">${data.toLocaleDateString()} - ${noticia.source.name} - ${noticia.author}</span><br>
@@ -22,7 +22,7 @@ function exibirNoticias() {
         <a href="${noticia.url}" target="_blank">Leia mais ...</a>
         </span>
         <p>===============================</p>
-        </div>
+        </article>
         `;
     };
     // Preencher a div com o texto HTML
