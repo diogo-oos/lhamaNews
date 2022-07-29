@@ -35,9 +35,17 @@ function pesquisar(evento) {
     evento.preventDefault();
     let query = document.getElementById('campoDePesquisa').value;
 
-    document.getElementById('tela').innerHTML = '';
-    let loading = document.querySelector('.loader')
-    loading.style.display = 'flex'
+    let newTela = document.getElementById('tela');
+
+    if (!query) {
+        newTela.innerHTML = '<h3>Por favor, insira alguma categoria de notícia</h3>';
+        return;
+    }
+
+    newTela.innerHTML = '';
+
+    let loading = document.querySelector('.loader');
+    loading.style.display = 'flex';
 
     let xhr = new XMLHttpRequest();
     xhr.onload = exibirNoticias;
