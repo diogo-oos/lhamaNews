@@ -27,11 +27,17 @@ function exibirNoticias() {
     };
     // Preencher a div com o texto HTML
     newTela.innerHTML = texto;
+    let loading = document.querySelector('.loader')
+    loading.style.display = 'none'
 }
 
 function pesquisar(evento) {
     evento.preventDefault();
     let query = document.getElementById('campoDePesquisa').value;
+
+    document.getElementById('tela').innerHTML = '';
+    let loading = document.querySelector('.loader')
+    loading.style.display = 'flex'
 
     let xhr = new XMLHttpRequest();
     xhr.onload = exibirNoticias;
